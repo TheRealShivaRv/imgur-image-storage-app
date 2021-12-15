@@ -11,7 +11,7 @@ Vue.use(VueRouter)
 export const router = new VueRouter({
     mode: 'history',
     routes: [
-        { path: new RegExp('^oauth2/callback*'), component: AuthHandler },
+        { path: 'oauth2/callback', component: AuthHandler },
         { path: '/', component: ImageList },
         { path: '/upload', component: UploadForm }
     ]
